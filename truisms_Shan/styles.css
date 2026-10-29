@@ -1,0 +1,42 @@
+/* Reset margin and padding */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Style for the body to cover the entire screen */
+body, html {
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+overflow: hidden; /* Disable scrolling */
+padding-bottom: 2%;
+}
+
+/* Full-screen video styling */
+.background-video {
+    position: absolute;
+    left: 0;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    object-fit: cover; /* Ensures video covers the whole viewport without distortion */
+    z-index: -1;
+}
+
+/* Centered text box styling */
+.text-box {
+    background-color: gray; /* Background color for text box */
+    color: black; /* Text color */
+    font-weight: bold; /* Bold text */
+    padding-top: 11px;
+    padding-right: 11px;
+    padding-left: 11px;
+    padding-bottom: 11px; /* Padding inside the text box */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center-align text within the box */
+    max-width: 80%; /* Limits the width of the text box */
+    bottom: 368pt;
+    height: 58px;
+}
